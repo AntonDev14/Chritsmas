@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva Navideña Mágica</title>
+    <!-- Fuentes elegantes y festivas -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Guirnalda de luces navideñas decorativas parpadeantes -->
+    <ul class="christmas-lights-strand">
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+
+    <!-- COLUMNA IZQUIERDA: ÁRBOL NAVIDEÑO -->
+    <div class="sidebar-column left-column">
+        <div class="tree-illustration-container"> 
+            <div class="star"></div>
+            <div class="pressie">
+                <div class="cover"></div>
+                <div class="wrap"> </div>
+                <div class="ribbon"></div>
+            </div>
+            <div class="tree">
+                <div class="base"> </div>
+                <div class="layer">
+                    <div class="line"> </div>
+                    <div class="bauble one"></div>
+                </div>
+                
+                <div class="layer two">
+                    <div class="line two"> </div>
+                    <div class="bauble two"></div>
+                    <div class="socks"> 
+                        <div class="top"> </div>
+                        <div class="foot"></div>
+                    </div>
+                </div>
+                
+                <div class="layer three">
+                    <div class="line three"> </div>
+                    <div class="bauble three"></div>
+                    <div class="socks two"> 
+                        <div class="top"> </div>
+                        <div class="foot two"></div>
+                    </div>
+                </div>
+                
+                <div class="layer four">
+                    <div class="bauble four"></div>
+                    <div class="star two"></div>
+                    <div class="line four"> </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COLUMNA CENTRAL: CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+        <header>
+            <h1>La Magia de la Navidad</h1>
+            <p class="subtitle">Momentos Especiales</p>
+        </header>
+
+        <!-- Bloque Principal del Contador -->
+        <div class="countdown-wrapper">
+            <div class="time-block"><span class="time-val" id="días">00</span><span class="time-lbl">Días</span></div>
+            <div class="time-block"><span class="time-val" id="horas">00</span><span class="time-lbl">Horas</span></div>
+            <div class="time-block"><span class="time-val" id="minutos">00</span><span class="time-lbl">Min</span></div>
+            <div class="time-block"><span class="time-val" id="segundos">00</span><span class="time-lbl">Seg</span></div>
+        </div>
+
+        <!-- Hoja de Calendario del Día Actual -->
+        <div class="today-card-container">
+            <div class="calendar-leaf" id="todayLeaf">
+                <div class="leaf-header" id="todayLeafMonth">MES</div>
+                <div class="leaf-body">
+                    <span class="leaf-num" id="todayLeafNum">00</span>
+                    <span class="leaf-badge" id="todayLeafBadge">Hoy</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acción para expandir el calendario completo -->
+        <button class="btn-toggle-calendar" id="toggleCalendarBtn">Ver Calendario Completo ✨</button>
+
+        <!-- Sección Oculta del Calendario Completo -->
+        <section class="calendar-section hidden" id="calendarSection">
+            <h2 class="section-title">✨ Calendario de Adviento ✨</h2>
+            <div class="calendar-container" id="calendarGrid"></div>
+        </section>
+    </main>
+
+    <!-- COLUMNA DERECHA: SANTA CLAUS -->
+    <div class="sidebar-column right-column">
+        <div class="santa-window">
+            <div class="santa">
+                <div class="head">
+                    <div class="face">
+                        <div class="redhat">
+                            <div class="whitepart"></div>
+                            <div class="redpart"></div>
+                            <div class="hatball"></div>
+                        </div>
+                        <div class="eyes"></div>
+                        <div class="beard">
+                            <div class="nouse"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                    <div class="ears"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana Emergente (Modal para las Sorpresas) -->
+    <div class="overlay" id="eventOverlay">
+        <div class="modal-box">
+            <div class="modal-decoration" id="modalEmoji">🎄</div>
+            <h3 id="modalTitle">Sorpresa</h3>
+            <p id="modalDesc">Contenido protegido.</p>
+            
+            <!-- Zona de inyección limpia para el SVG animado del 25 Dic -->
+            <div id="christmasAnimationArea" class="svg-anim-zone"></div>
+            
+            <button class="btn-close" id="closeModalBtn">Cerrar con Magia</button>
+        </div>
+    </div>
+
+    <!-- Carga Core de Animaciones (Imprescindibles para procesar las partículas del 25 de Dic) -->
+    <script src="https://cloudflare.com"></script>
+    <script src="https://cloudflare.com"></script>
+    <script src="https://cloudflare.com"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
